@@ -1,0 +1,933 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Nov  9 17:26:12 2026
+# Process ID         : 74734
+# Current directory  : /home/ashwath/AAegis_soc_ip/aegis_soc
+# Command line       : vivado -mode batch -source flow/sim_bd.tcl
+# Log file           : /home/ashwath/AAegis_soc_ip/aegis_soc/vivado.log
+# Journal file       : /home/ashwath/AAegis_soc_ip/aegis_soc/vivado.jou
+# Running On         : Obsidian
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-1235U
+# CPU Frequency      : 3323.294 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 7982 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 16572 MB
+# Available Virtual  : 13154 MB
+#-----------------------------------------------------------
+source flow/sim_bd.tcl
+# set root [pwd]
+# open_project build/bd_soc/aegis_soc_bd.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/emb-plus-vpr-4616/1.0/board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/emb-plus-vpr-4616/1.1/board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.1 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.1/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.4/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.7 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.7/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kd240_som/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.1 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kd240_som/1.1/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.0/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.1/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu35:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/scu35/1.0/board.xml as part xcsu35p-sbvb625-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/v80/1.0/board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.5 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.5/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.4/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek385/1.0/board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.1 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek385/1.1/board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385_1:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek385_2/1.0/board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.2/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.3/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vrk160/1.0/board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.1 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vrk160/1.1/board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.5 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.5/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /home/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ashwath/AAegis_soc_ip/aegis_soc/ip/aegis_cpu/release'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ashwath/AAegis_soc_ip/aegis_soc/ip/aegis_dma/release'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ashwath/AAegis_soc_ip/aegis_soc/ip/aegis_qspi/release'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ashwath/AAegis_soc_ip/aegis_soc/ip/aegis_tcm/release'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ashwath/AAegis_soc_ip/aegis_soc/ip/aegis_gemm/release'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ashwath/AAegis_soc_ip/aegis_soc/ip/aegis_rom/release'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ashwath/AAegis_soc_ip/aegis_soc/ip/aegis_sram/release'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ashwath/AAegis_soc_ip/aegis_soc/ip/aegis_sysregs/release'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/2025.2/data/ip'.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design /home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.srcs/sources_1/bd/aegis_soc/aegis_soc.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ aegis_soc_irq_cat3_0
+aegis_soc_irq_cat15_0
+aegis_soc_zero12_0
+# add_files -fileset sim_1 -norecurse [list [file normalize soc/tb/tb_bd_soc.sv] [file normalize ip/aegis_qspi/tb/flash_model.sv]]
+# set_property file_type SystemVerilog [get_files -of_objects [get_filesets sim_1] *.sv]
+# set_property top tb_bd_soc [get_filesets sim_1]
+# set_property top_lib xil_defaultlib [get_filesets sim_1]
+# set_property -name {xsim.simulate.runtime} -value {all} -objects [get_filesets sim_1]
+# update_compile_order -fileset sim_1
+# set simdir [file normalize build/bd_soc/aegis_soc_bd.sim/sim_1/behav/xsim]
+# catch { launch_simulation -scripts_only }
+Command: launch_simulation  -scripts_only
+INFO: [Vivado 12-25912] Generating simulation scripts for 'XSim' simulator
+INFO: [Project 1-5737] Running on host Obsidian (64) - Ubuntu 22.04.5 LTS
+INFO: [Vivado 12-28535] Process started - Mon Nov  9 17:26:18 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_bd_soc'
+INFO: [BD 41-1662] The design 'aegis_soc.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : /home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/synth/aegis_soc.v
+Verilog Output written to : /home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/sim/aegis_soc.v
+Verilog Output written to : /home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/hdl/aegis_soc_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aegis_cpu_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aegis_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aegis_qspi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aegis_tcm_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aegis_gemm_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aegis_rom_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aegis_sram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aegis_sysregs_0 .
+Exporting to file /home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/hw_handoff/aegis_soc_smartconnect_0_0.hwh
+Generated Hardware Definition File /home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/synth/aegis_soc_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block irq_cat3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block irq_cat15 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zero12 .
+Exporting to file /home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/hw_handoff/aegis_soc.hwh
+Generated Hardware Definition File /home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/synth/aegis_soc.hwdef
+INFO: [BD 41-3262] Generated VHDL Instantiation Template file /home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/aegis_soc.vho
+INFO: [BD 41-3262] Generated Verilog Instantiation Template file /home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/aegis_soc.veo
+INFO: [BD 41-3262] Generated System Verilog Instantiation Template file /home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/aegis_soc_sv.sveo
+INFO: [Vivado 12-5680] Creating behavioral simulation scripts in '/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/2025.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/home/2025.2/data/xsim/xsim.ini' copied to run dir:'/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_bd_soc' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.sim/sim_1/behav/xsim/sc_xtlm_aegis_soc_smartconnect_0_0.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-60] Script generated:/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.sim/sim_1/behav/xsim/compile.sh
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-60] Script generated:/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.sim/sim_1/behav/xsim/elaborate.sh
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-60] Script generated:/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.sim/sim_1/behav/xsim/simulate.sh
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1939.930 ; gain = 279.035 ; free physical = 2681 ; free virtual = 13135
+# file mkdir $simdir
+# file copy -force [file normalize soc/fw/boot.hex] $simdir/boot.hex
+# launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Project 1-5737] Running on host Obsidian (64) - Ubuntu 22.04.5 LTS
+INFO: [Vivado 12-28535] Process started - Mon Nov  9 17:26:27 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_bd_soc'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/2025.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/home/2025.2/data/xsim/xsim.ini' copied to run dir:'/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_bd_soc' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.sim/sim_1/behav/xsim/sc_xtlm_aegis_soc_smartconnect_0_0.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -L smartconnect_v1_0 -L axi_vip_v1_1_22 -L xilinx_vip -prj tb_bd_soc_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_alu
+INFO: [VRFC 10-311] analyzing module ibex_branch_predict
+INFO: [VRFC 10-311] analyzing module ibex_compressed_decoder
+INFO: [VRFC 10-311] analyzing module ibex_controller
+INFO: [VRFC 10-311] analyzing module ibex_core
+INFO: [VRFC 10-311] analyzing module ibex_counter
+INFO: [VRFC 10-311] analyzing module ibex_cs_registers
+INFO: [VRFC 10-311] analyzing module ibex_csr
+INFO: [VRFC 10-311] analyzing module ibex_decoder
+INFO: [VRFC 10-311] analyzing module ibex_dummy_instr
+INFO: [VRFC 10-311] analyzing module ibex_ex_block
+INFO: [VRFC 10-311] analyzing module ibex_fetch_fifo
+INFO: [VRFC 10-311] analyzing module ibex_icache
+INFO: [VRFC 10-311] analyzing module ibex_id_stage
+INFO: [VRFC 10-311] analyzing module ibex_if_stage
+INFO: [VRFC 10-311] analyzing module ibex_load_store_unit
+INFO: [VRFC 10-311] analyzing module ibex_lockstep
+INFO: [VRFC 10-311] analyzing module ibex_multdiv_fast
+INFO: [VRFC 10-311] analyzing module ibex_multdiv_slow
+INFO: [VRFC 10-311] analyzing module ibex_pmp
+INFO: [VRFC 10-311] analyzing module ibex_prefetch_buffer
+INFO: [VRFC 10-311] analyzing module ibex_register_file_ff
+INFO: [VRFC 10-311] analyzing module ibex_register_file_fpga
+INFO: [VRFC 10-311] analyzing module ibex_register_file_latch
+INFO: [VRFC 10-311] analyzing module ibex_top
+INFO: [VRFC 10-311] analyzing module ibex_wb_stage
+INFO: [VRFC 10-311] analyzing module prim_and2
+INFO: [VRFC 10-311] analyzing module prim_buf
+INFO: [VRFC 10-311] analyzing module prim_clock_gating
+INFO: [VRFC 10-311] analyzing module prim_clock_mux2
+INFO: [VRFC 10-311] analyzing module prim_count
+INFO: [VRFC 10-311] analyzing module prim_flop
+INFO: [VRFC 10-311] analyzing module prim_generic_and2
+INFO: [VRFC 10-311] analyzing module prim_generic_buf
+INFO: [VRFC 10-311] analyzing module prim_generic_clock_gating
+INFO: [VRFC 10-311] analyzing module prim_generic_clock_mux2
+INFO: [VRFC 10-311] analyzing module prim_generic_flop
+INFO: [VRFC 10-311] analyzing module prim_generic_flop_en
+INFO: [VRFC 10-311] analyzing module prim_generic_ram_1p
+INFO: [VRFC 10-311] analyzing module prim_lfsr
+INFO: [VRFC 10-311] analyzing module prim_onehot_check
+INFO: [VRFC 10-311] analyzing module prim_onehot_enc
+INFO: [VRFC 10-311] analyzing module prim_onehot_mux
+INFO: [VRFC 10-311] analyzing module prim_present
+INFO: [VRFC 10-311] analyzing module prim_prince
+INFO: [VRFC 10-311] analyzing module prim_ram_1p
+INFO: [VRFC 10-311] analyzing module prim_ram_1p_adv
+INFO: [VRFC 10-311] analyzing module prim_ram_1p_scr
+INFO: [VRFC 10-311] analyzing module prim_sec_anchor_buf
+INFO: [VRFC 10-311] analyzing module prim_secded_22_16_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_22_16_enc
+INFO: [VRFC 10-311] analyzing module prim_secded_28_22_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_28_22_enc
+INFO: [VRFC 10-311] analyzing module prim_secded_39_32_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_39_32_enc
+INFO: [VRFC 10-311] analyzing module prim_secded_64_57_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_64_57_enc
+INFO: [VRFC 10-311] analyzing module prim_secded_72_64_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_72_64_enc
+INFO: [VRFC 10-311] analyzing module prim_secded_hamming_22_16_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_hamming_22_16_enc
+INFO: [VRFC 10-311] analyzing module prim_secded_hamming_39_32_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_hamming_39_32_enc
+INFO: [VRFC 10-311] analyzing module prim_secded_hamming_72_64_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_hamming_72_64_enc
+INFO: [VRFC 10-311] analyzing module prim_secded_hamming_76_68_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_hamming_76_68_enc
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_22_16_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_22_16_enc
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_28_22_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_28_22_enc
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_39_32_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_39_32_enc
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_64_57_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_64_57_enc
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_72_64_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_72_64_enc
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_hamming_22_16_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_hamming_22_16_enc
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_hamming_39_32_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_hamming_39_32_enc
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_hamming_72_64_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_hamming_72_64_enc
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_hamming_76_68_dec
+INFO: [VRFC 10-311] analyzing module prim_secded_inv_hamming_76_68_enc
+INFO: [VRFC 10-311] analyzing module prim_sparse_fsm_flop
+INFO: [VRFC 10-311] analyzing module prim_subst_perm
+INFO: [VRFC 10-311] analyzing module prim_xilinx_clock_gating
+INFO: [VRFC 10-311] analyzing module obi_to_axil
+INFO: [VRFC 10-311] analyzing module aegis_cpu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_aegis_cpu_0_0/sim/aegis_soc_aegis_cpu_0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aegis_soc_aegis_cpu_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/2eb6/aegis_dma_flat.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_dma
+INFO: [VRFC 10-311] analyzing module speck_decryptor
+INFO: [VRFC 10-311] analyzing module aegis_dma
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_aegis_dma_0_0/sim/aegis_soc_aegis_dma_0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aegis_soc_aegis_dma_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/e4de/aegis_qspi_flat.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axil2apb
+INFO: [VRFC 10-311] analyzing module apb_spi_master
+INFO: [VRFC 10-311] analyzing module qspi_shift
+INFO: [VRFC 10-311] analyzing module qspi_fifo
+INFO: [VRFC 10-311] analyzing module aegis_qspi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_aegis_qspi_0_0/sim/aegis_soc_aegis_qspi_0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aegis_soc_aegis_qspi_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/5c39/aegis_tcm_flat.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_tcm
+INFO: [VRFC 10-311] analyzing module ping_pong_sram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_aegis_tcm_0_0/sim/aegis_soc_aegis_tcm_0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aegis_soc_aegis_tcm_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/8b9a/aegis_gemm_flat.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gemm_controller
+INFO: [VRFC 10-311] analyzing module systolic_array
+INFO: [VRFC 10-311] analyzing module pe
+INFO: [VRFC 10-311] analyzing module icg_cell
+INFO: [VRFC 10-311] analyzing module aegis_gemm
+INFO: [VRFC 10-311] analyzing module axil_regif
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_aegis_gemm_0_0/sim/aegis_soc_aegis_gemm_0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aegis_soc_aegis_gemm_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/1d20/aegis_rom_flat.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axil_rom
+INFO: [VRFC 10-311] analyzing module axil_regif
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'axil_regif' [/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/1d20/aegis_rom_flat.sv:284]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_aegis_rom_0_0/sim/aegis_soc_aegis_rom_0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aegis_soc_aegis_rom_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/b8d7/aegis_sram_flat.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axil_sram
+INFO: [VRFC 10-311] analyzing module axil_regif
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'axil_regif' [/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/b8d7/aegis_sram_flat.sv:59]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_aegis_sram_0_0/sim/aegis_soc_aegis_sram_0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aegis_soc_aegis_sram_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/784d/aegis_sysregs_flat.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_sysregs
+INFO: [VRFC 10-311] analyzing module axil_regif
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'axil_regif' [/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/784d/aegis_sysregs_flat.sv:94]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_aegis_sysregs_0_0/sim/aegis_soc_aegis_sysregs_0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aegis_soc_aegis_sysregs_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_9d63_arinsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_arinsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_3/sim/bd_9d63_rinsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_rinsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_4/sim/bd_9d63_awinsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_awinsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_5/sim/bd_9d63_winsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_winsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_6/sim/bd_9d63_binsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_binsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_7/sim/bd_9d63_aroutsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_aroutsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_8/sim/bd_9d63_routsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_routsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_9/sim/bd_9d63_awoutsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_awoutsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_10/sim/bd_9d63_woutsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_woutsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_11/sim/bd_9d63_boutsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_boutsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_12/sim/bd_9d63_arni_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_arni_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_13/sim/bd_9d63_rni_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_rni_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_14/sim/bd_9d63_awni_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_awni_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_15/sim/bd_9d63_wni_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_wni_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_16/sim/bd_9d63_bni_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_bni_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_17/sim/bd_9d63_s00mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_s00mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_18/sim/bd_9d63_s00tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_s00tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_19/sim/bd_9d63_s00sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_s00sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_20/sim/bd_9d63_s00a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_s00a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_21/sim/bd_9d63_sarn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_sarn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_22/sim/bd_9d63_srn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_srn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_23/sim/bd_9d63_sawn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_sawn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_24/sim/bd_9d63_swn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_swn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_25/sim/bd_9d63_sbn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_sbn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_26/sim/bd_9d63_s01mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_s01mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_27/sim/bd_9d63_s01tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_s01tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_28/sim/bd_9d63_s01sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_s01sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_29/sim/bd_9d63_s01a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_s01a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_30/sim/bd_9d63_sarn_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_sarn_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_31/sim/bd_9d63_srn_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_srn_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_32/sim/bd_9d63_sawn_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_sawn_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_33/sim/bd_9d63_swn_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_swn_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_34/sim/bd_9d63_sbn_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_sbn_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_35/sim/bd_9d63_m00s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m00s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_36/sim/bd_9d63_m00arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m00arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_37/sim/bd_9d63_m00rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m00rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_38/sim/bd_9d63_m00awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m00awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_39/sim/bd_9d63_m00wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m00wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_40/sim/bd_9d63_m00bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m00bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_41/sim/bd_9d63_m00e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m00e_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_42/sim/bd_9d63_m01s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m01s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_43/sim/bd_9d63_m01arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m01arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_44/sim/bd_9d63_m01rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m01rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_45/sim/bd_9d63_m01awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m01awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_46/sim/bd_9d63_m01wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m01wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_47/sim/bd_9d63_m01bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m01bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_48/sim/bd_9d63_m01e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m01e_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_49/sim/bd_9d63_m02s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m02s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_50/sim/bd_9d63_m02arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m02arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_51/sim/bd_9d63_m02rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m02rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_52/sim/bd_9d63_m02awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m02awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_53/sim/bd_9d63_m02wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m02wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_54/sim/bd_9d63_m02bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m02bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_55/sim/bd_9d63_m02e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m02e_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_56/sim/bd_9d63_m03s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m03s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_57/sim/bd_9d63_m03arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m03arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_58/sim/bd_9d63_m03rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m03rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_59/sim/bd_9d63_m03awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m03awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_60/sim/bd_9d63_m03wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m03wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_61/sim/bd_9d63_m03bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m03bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_62/sim/bd_9d63_m03e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m03e_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_63/sim/bd_9d63_m04s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m04s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_64/sim/bd_9d63_m04arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m04arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_65/sim/bd_9d63_m04rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m04rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_66/sim/bd_9d63_m04awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m04awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_67/sim/bd_9d63_m04wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m04wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_68/sim/bd_9d63_m04bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m04bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_69/sim/bd_9d63_m04e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m04e_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_70/sim/bd_9d63_m05s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m05s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_71/sim/bd_9d63_m05arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m05arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_72/sim/bd_9d63_m05rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m05rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_73/sim/bd_9d63_m05awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m05awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_74/sim/bd_9d63_m05wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m05wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_75/sim/bd_9d63_m05bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m05bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_76/sim/bd_9d63_m05e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63_m05e_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/sim/bd_9d63.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9d63
+INFO: [VRFC 10-311] analyzing module clk_map_imp_1Q0KC0E
+INFO: [VRFC 10-311] analyzing module i_nodes_imp_8FWCV4
+INFO: [VRFC 10-311] analyzing module m00_exit_pipeline_imp_AVBIMT
+INFO: [VRFC 10-311] analyzing module m00_nodes_imp_X1M3AX
+INFO: [VRFC 10-311] analyzing module m01_exit_pipeline_imp_DBO89H
+INFO: [VRFC 10-311] analyzing module m01_nodes_imp_1SYA5VZ
+INFO: [VRFC 10-311] analyzing module m02_exit_pipeline_imp_2MT385
+INFO: [VRFC 10-311] analyzing module m02_nodes_imp_15QXVH0
+INFO: [VRFC 10-311] analyzing module m03_exit_pipeline_imp_8F07YT
+INFO: [VRFC 10-311] analyzing module m03_nodes_imp_36LZVM
+INFO: [VRFC 10-311] analyzing module m04_exit_pipeline_imp_YA3GNP
+INFO: [VRFC 10-311] analyzing module m04_nodes_imp_UPTHR6
+INFO: [VRFC 10-311] analyzing module m05_exit_pipeline_imp_U57TG5
+INFO: [VRFC 10-311] analyzing module m05_nodes_imp_1VMK3MC
+INFO: [VRFC 10-311] analyzing module s00_entry_pipeline_imp_19ICEFQ
+INFO: [VRFC 10-311] analyzing module s00_nodes_imp_1DBEM8C
+INFO: [VRFC 10-311] analyzing module s01_entry_pipeline_imp_HLXO02
+INFO: [VRFC 10-311] analyzing module s01_nodes_imp_CEGN0A
+INFO: [VRFC 10-311] analyzing module switchboards_imp_1OKFQXK
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/sim/aegis_soc_smartconnect_0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aegis_soc_smartconnect_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_irq_cat3_0/sim/aegis_soc_irq_cat3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aegis_soc_irq_cat3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_irq_cat15_0/sim/aegis_soc_irq_cat15_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aegis_soc_irq_cat15_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_zero12_0/sim/aegis_soc_zero12_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aegis_soc_zero12_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/sim/aegis_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aegis_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.srcs/sources_1/imports/hdl/aegis_soc_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aegis_soc_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/ip/aegis_qspi/tb/flash_model.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module qspi_flash_model
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/soc/tb/tb_bd_soc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_bd_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj tb_bd_soc_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_9d63_psr_aclk_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9d63_psr_aclk_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_rst_0_0/sim/aegis_soc_rst_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'aegis_soc_rst_0_0'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L proc_sys_reset_v5_0_17 -L smartconnect_v1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_36 -L axi_vip_v1_1_22 -L xlconcat_v2_1_7 -L xlconstant_v1_1_10 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_bd_soc_behav xil_defaultlib.tb_bd_soc xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L proc_sys_reset_v5_0_17 -L smartconnect_v1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_36 -L axi_vip_v1_1_22 -L xlconcat_v2_1_7 -L xlconstant_v1_1_10 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_bd_soc_behav xil_defaultlib.tb_bd_soc xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/sim/aegis_soc.v:468]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ip/aegis_soc_smartconnect_0_0/bd_0/sim/bd_9d63.v:2935]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 4556. Module ibex_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 4530. Module prim_ram_1p_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 673. Module prim_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 29336. Module ibex_top(RV32M=RV32MFast_ibex_pkg_xil_defaultlib,RV32B=RV32BNone_ibex_pkg_xil_defaultlib,RegFile=RegFileFF_ibex_pkg_xil_defaultlib) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 31708. Module prim_clock_gating_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 33331. Module prim_generic_clock_gating doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 31677. Module prim_buf(Width=4) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 33307. Module prim_generic_buf(Width=4) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 31677. Module prim_buf(Width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 33307. Module prim_generic_buf(Width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 31677. Module prim_buf(Width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 33307. Module prim_generic_buf(Width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 10487. Module ibex_core(PMPRstCfg='{'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},_________'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0}},PMPRstAddr='{34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0},PMPRstMsecCfg='{1'b0,1'b0,1'b0},RV32M=RV32MFast_ibex_pkg_xil_defaultlib,RV32B=RV32BNone_ibex_pkg_xil_defaultlib,BusSizeECC=32'b0100000,TagSizeECC=32'b010110,LineSizeECC=32'b01000000,RndCnstLfsrSeed=32'b10101100010100110011101111110100,RndCnstLfsrPerm=160'b01111000110101111011001011101001000110011111111101000110110001001011101001010110000001010100101100000001001111101001000011100001111000101010001101101011101101,MemDataWidth=32'b0100000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 22688. Module ibex_if_stage(BusSizeECC=32'b0100000,TagSizeECC=32'b010110,LineSizeECC=32'b01000000,RndCnstLfsrSeed=32'b10101100010100110011101111110100,RndCnstLfsrPerm=160'b01111000110101111011001011101001000110011111111101000110110001001011101001010110000001010100101100000001001111101001000011100001111000101010001101101011101101,MemDataWidth=32'b0100000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 27758. Module ibex_prefetch_buffer_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 18150. Module ibex_fetch_fifo_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 7892. Module ibex_compressed_decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 20862. Module ibex_id_stage(RV32M=RV32MFast_ibex_pkg_xil_defaultlib,RV32B=RV32BNone_ibex_pkg_xil_defaultlib) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 16006. Module ibex_decoder(RV32M=RV32MFast_ibex_pkg_xil_defaultlib,RV32B=RV32BNone_ibex_pkg_xil_defaultlib) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [VRFC 10-2649] an enum variable may only be assigned the same enum typed variable or one of its values [/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv:16132]
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 8866. Module ibex_controller_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 17369. Module ibex_ex_block(RV32M=RV32MFast_ibex_pkg_xil_defaultlib,RV32B=RV32BNone_ibex_pkg_xil_defaultlib) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 5265. Module ibex_alu(RV32B=RV32BNone_ibex_pkg_xil_defaultlib) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 25873. Module ibex_multdiv_fast(RV32M=RV32MFast_ibex_pkg_xil_defaultlib) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 24177. Module ibex_load_store_unit(MemDataWidth=32'b0100000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 31398. Module ibex_wb_stage_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 13141. Module ibex_cs_registers(MHPMCounterNum=32'b0,PMPRstCfg='{'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0},_________'{1'b0,ibex_pkg::PMP_MODE_OFF,1'b0,1'b0,1'b0}},PMPRstAddr='{34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0},PMPRstMsecCfg='{1'b0,1'b0,1'b0},RV32M=RV32MFast_ibex_pkg_xil_defaultlib,RV32B=RV32BNone_ibex_pkg_xil_defaultlib) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 15384. Module ibex_csr(Width=32'b0110,ResetValue=6'b010000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 15384. Module ibex_csr(ResetValue=32'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 15384. Module ibex_csr(Width=32'b010010,ResetValue=18'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 15384. Module ibex_csr(ResetValue=32'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 15384. Module ibex_csr(Width=32'b0111,ResetValue=7'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 15384. Module ibex_csr(ResetValue=32'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 15384. Module ibex_csr(ResetValue=32'b01) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 15384. Module ibex_csr(ResetValue=32'b01000000000000000000000000000011) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 15384. Module ibex_csr(ResetValue=32'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 15384. Module ibex_csr(ResetValue=32'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 15384. Module ibex_csr(ResetValue=32'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 15384. Module ibex_csr(Width=32'b011,ResetValue=3'b100) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 15384. Module ibex_csr(ResetValue=32'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 15384. Module ibex_csr(Width=32'b0111,ResetValue=7'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 12463. Module ibex_counter(CounterWidth=64) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 12463. Module ibex_counter(CounterWidth=64,ProvideValUpd=1'b1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 15384. Module ibex_csr(Width=32'b01000,ResetValue=8'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/a5ab/aegis_cpu_flat.sv" Line 28026. Module ibex_register_file_ff(WordZeroVal=32'b0) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_arith
+Compiling package xpm.vcomponents
+Compiling package xil_defaultlib.ibex_pkg
+Compiling package xil_defaultlib.prim_ram_1p_pkg
+Compiling package xil_defaultlib.prim_pkg
+Compiling package smartconnect_v1_0.sc_util_v1_0_4_pkg
+Compiling module xil_defaultlib.prim_generic_clock_gating
+Compiling module xil_defaultlib.prim_clock_gating_default
+Compiling module xil_defaultlib.prim_generic_buf(Width=4)
+Compiling module xil_defaultlib.prim_buf(Width=4)
+Compiling module xil_defaultlib.prim_generic_buf(Width=32)
+Compiling module xil_defaultlib.prim_buf(Width=32)
+Compiling module xil_defaultlib.ibex_fetch_fifo_default
+Compiling module xil_defaultlib.ibex_prefetch_buffer_default
+Compiling module xil_defaultlib.ibex_compressed_decoder
+Compiling module xil_defaultlib.ibex_if_stage(BusSizeECC=32'b010...
+Compiling module xil_defaultlib.ibex_decoder(RV32M=RV32MFast_ibe...
+Compiling module xil_defaultlib.ibex_controller_default
+Compiling module xil_defaultlib.ibex_id_stage(RV32M=RV32MFast_ib...
+Compiling module xil_defaultlib.ibex_alu(RV32B=RV32BNone_ibex_pk...
+Compiling module xil_defaultlib.ibex_multdiv_fast(RV32M=RV32MFas...
+Compiling module xil_defaultlib.ibex_ex_block(RV32M=RV32MFast_ib...
+Compiling module xil_defaultlib.ibex_load_store_unit(MemDataWidt...
+Compiling module xil_defaultlib.ibex_wb_stage_default
+Compiling module xil_defaultlib.ibex_csr(Width=32'b0110,ResetVal...
+Compiling module xil_defaultlib.ibex_csr(ResetValue=32'b0)
+Compiling module xil_defaultlib.ibex_csr(Width=32'b010010,ResetV...
+Compiling module xil_defaultlib.ibex_csr(Width=32'b0111,ResetVal...
+Compiling module xil_defaultlib.ibex_csr(ResetValue=32'b01)
+Compiling module xil_defaultlib.ibex_csr(ResetValue=32'b01000000...
+Compiling module xil_defaultlib.ibex_csr(Width=32'b011,ResetValu...
+Compiling module xil_defaultlib.ibex_counter(CounterWidth=64)
+Compiling module xil_defaultlib.ibex_counter(CounterWidth=64,Pro...
+Compiling module xil_defaultlib.ibex_csr(Width=32'b01000,ResetVa...
+Compiling module xil_defaultlib.ibex_cs_registers(MHPMCounterNum...
+Compiling module xil_defaultlib.ibex_core(PMPRstCfg='{'{1'b0,ibe...
+Compiling module xil_defaultlib.ibex_register_file_ff(WordZeroVa...
+Compiling module xil_defaultlib.ibex_top(RV32M=RV32MFast_ibex_pk...
+Compiling module xil_defaultlib.obi_to_axil
+Compiling module xil_defaultlib.aegis_cpu
+Compiling module xil_defaultlib.aegis_soc_aegis_cpu_0_0
+Compiling module xil_defaultlib.speck_decryptor
+Compiling module xil_defaultlib.axi_dma
+Compiling module xil_defaultlib.aegis_dma
+Compiling module xil_defaultlib.aegis_soc_aegis_dma_0_0
+Compiling module xil_defaultlib.axil_regif(AW=13)
+Compiling module xil_defaultlib.gemm_controller
+Compiling module xil_defaultlib.pe_default
+Compiling module xil_defaultlib.systolic_array_default
+Compiling module xil_defaultlib.aegis_gemm
+Compiling module xil_defaultlib.aegis_soc_aegis_gemm_0_0
+Compiling module xil_defaultlib.axil2apb
+Compiling module xil_defaultlib.qspi_shift
+Compiling module xil_defaultlib.qspi_fifo(DEPTH=4)
+Compiling module xil_defaultlib.apb_spi_master
+Compiling module xil_defaultlib.aegis_qspi
+Compiling module xil_defaultlib.aegis_soc_aegis_qspi_0_0
+Compiling module xil_defaultlib.axil_regif(AW=14)
+Compiling module xil_defaultlib.axil_rom_default
+WARNING: [XSIM 43-3373] "/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.gen/sources_1/bd/aegis_soc/ipshared/1d20/aegis_rom_flat.sv" Line 252. System function $value$plusargs is used as system task. This system function should have a LHS e.g. x=$value$plusargs().
+Compiling module xil_defaultlib.aegis_soc_aegis_rom_0_0
+Compiling module xil_defaultlib.axil_sram_default
+Compiling module xil_defaultlib.aegis_soc_aegis_sram_0_0
+Compiling module xil_defaultlib.axil_regif(AW=8)
+Compiling module xil_defaultlib.soc_sysregs
+Compiling module xil_defaultlib.aegis_soc_aegis_sysregs_0_0
+Compiling module xil_defaultlib.ping_pong_sram
+Compiling module xil_defaultlib.axi_tcm
+Compiling module xil_defaultlib.aegis_soc_aegis_tcm_0_0
+Compiling module xlconcat_v2_1_7.xlconcat_v2_1_7_xlconcat(IN3_WID...
+Compiling module xil_defaultlib.aegis_soc_irq_cat15_0
+Compiling module xlconcat_v2_1_7.xlconcat_v2_1_7_xlconcat(dout_wi...
+Compiling module xil_defaultlib.aegis_soc_irq_cat3_0
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling module xpm.xpm_cdc_single(DEST_SYNC_FF=4,IN...
+Compiling architecture imp of entity proc_sys_reset_v5_0_17.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_17.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_17.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_17.proc_sys_reset [\proc_sys_reset(c_family="artix7...]
+Compiling architecture aegis_soc_rst_0_0_arch of entity xil_defaultlib.aegis_soc_rst_0_0 [aegis_soc_rst_0_0_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_17.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_17.proc_sys_reset [\proc_sys_reset(c_family="artix7...]
+Compiling architecture bd_9d63_psr_aclk_0_arch of entity xil_defaultlib.bd_9d63_psr_aclk_0 [bd_9d63_psr_aclk_0_default]
+Compiling module xil_defaultlib.clk_map_imp_1Q0KC0E
+Compiling module xpm.xpm_cdc_async_rst(DEST_SYNC_FF=3...
+Compiling module xil_defaultlib.bd_9d63_m00e_0
+Compiling module xil_defaultlib.m00_exit_pipeline_imp_AVBIMT
+Compiling module xil_defaultlib.bd_9d63_m00arn_0
+Compiling module xil_defaultlib.bd_9d63_m00awn_0
+Compiling module xil_defaultlib.bd_9d63_m00bn_0
+Compiling module xil_defaultlib.bd_9d63_m00rn_0
+Compiling module xil_defaultlib.bd_9d63_m00wn_0
+Compiling module xil_defaultlib.m00_nodes_imp_X1M3AX
+Compiling module xil_defaultlib.bd_9d63_m00s2a_0
+Compiling module xil_defaultlib.bd_9d63_m01e_0
+Compiling module xil_defaultlib.m01_exit_pipeline_imp_DBO89H
+Compiling module xil_defaultlib.bd_9d63_m01arn_0
+Compiling module xil_defaultlib.bd_9d63_m01awn_0
+Compiling module xil_defaultlib.bd_9d63_m01bn_0
+Compiling module xil_defaultlib.bd_9d63_m01rn_0
+Compiling module xil_defaultlib.bd_9d63_m01wn_0
+Compiling module xil_defaultlib.m01_nodes_imp_1SYA5VZ
+Compiling module xil_defaultlib.bd_9d63_m01s2a_0
+Compiling module xil_defaultlib.bd_9d63_m02e_0
+Compiling module xil_defaultlib.m02_exit_pipeline_imp_2MT385
+Compiling module xil_defaultlib.bd_9d63_m02arn_0
+Compiling module xil_defaultlib.bd_9d63_m02awn_0
+Compiling module xil_defaultlib.bd_9d63_m02bn_0
+Compiling module xil_defaultlib.bd_9d63_m02rn_0
+Compiling module xil_defaultlib.bd_9d63_m02wn_0
+Compiling module xil_defaultlib.m02_nodes_imp_15QXVH0
+Compiling module xil_defaultlib.bd_9d63_m02s2a_0
+Compiling module xil_defaultlib.bd_9d63_m03e_0
+Compiling module xil_defaultlib.m03_exit_pipeline_imp_8F07YT
+Compiling module xil_defaultlib.bd_9d63_m03arn_0
+Compiling module xil_defaultlib.bd_9d63_m03awn_0
+Compiling module xil_defaultlib.bd_9d63_m03bn_0
+Compiling module xil_defaultlib.bd_9d63_m03rn_0
+Compiling module xil_defaultlib.bd_9d63_m03wn_0
+Compiling module xil_defaultlib.m03_nodes_imp_36LZVM
+Compiling module xil_defaultlib.bd_9d63_m03s2a_0
+Compiling module xil_defaultlib.bd_9d63_m04e_0
+Compiling module xil_defaultlib.m04_exit_pipeline_imp_YA3GNP
+Compiling module xil_defaultlib.bd_9d63_m04arn_0
+Compiling module xil_defaultlib.bd_9d63_m04awn_0
+Compiling module xil_defaultlib.bd_9d63_m04bn_0
+Compiling module xil_defaultlib.bd_9d63_m04rn_0
+Compiling module xil_defaultlib.bd_9d63_m04wn_0
+Compiling module xil_defaultlib.m04_nodes_imp_UPTHR6
+Compiling module xil_defaultlib.bd_9d63_m04s2a_0
+Compiling module xil_defaultlib.bd_9d63_m05e_0
+Compiling module xil_defaultlib.m05_exit_pipeline_imp_U57TG5
+Compiling module xil_defaultlib.bd_9d63_m05arn_0
+Compiling module xil_defaultlib.bd_9d63_m05awn_0
+Compiling module xil_defaultlib.bd_9d63_m05bn_0
+Compiling module xil_defaultlib.bd_9d63_m05rn_0
+Compiling module xil_defaultlib.bd_9d63_m05wn_0
+Compiling module xil_defaultlib.m05_nodes_imp_1VMK3MC
+Compiling module xil_defaultlib.bd_9d63_m05s2a_0
+Compiling module xil_defaultlib.bd_9d63_s00a2s_0
+Compiling module xil_defaultlib.bd_9d63_s00mmu_0
+Compiling module xil_defaultlib.bd_9d63_s00sic_0
+Compiling module xil_defaultlib.bd_9d63_s00tr_0
+Compiling module xil_defaultlib.s00_entry_pipeline_imp_19ICEFQ
+Compiling module xil_defaultlib.bd_9d63_sarn_0
+Compiling module xil_defaultlib.bd_9d63_sawn_0
+Compiling module xil_defaultlib.bd_9d63_sbn_0
+Compiling module xil_defaultlib.bd_9d63_srn_0
+Compiling module xil_defaultlib.bd_9d63_swn_0
+Compiling module xil_defaultlib.s00_nodes_imp_1DBEM8C
+Compiling module xil_defaultlib.bd_9d63_s01a2s_0
+Compiling module xil_defaultlib.bd_9d63_s01mmu_0
+Compiling module xil_defaultlib.bd_9d63_s01sic_0
+Compiling module xil_defaultlib.bd_9d63_s01tr_0
+Compiling module xil_defaultlib.s01_entry_pipeline_imp_HLXO02
+Compiling module xil_defaultlib.bd_9d63_sarn_1
+Compiling module xil_defaultlib.bd_9d63_sawn_1
+Compiling module xil_defaultlib.bd_9d63_sbn_1
+Compiling module xil_defaultlib.bd_9d63_srn_1
+Compiling module xil_defaultlib.bd_9d63_swn_1
+Compiling module xil_defaultlib.s01_nodes_imp_CEGN0A
+Compiling module xil_defaultlib.bd_9d63_arinsw_0
+Compiling module xil_defaultlib.bd_9d63_aroutsw_0
+Compiling module xil_defaultlib.bd_9d63_awinsw_0
+Compiling module xil_defaultlib.bd_9d63_awoutsw_0
+Compiling module xil_defaultlib.bd_9d63_binsw_0
+Compiling module xil_defaultlib.bd_9d63_boutsw_0
+Compiling module xil_defaultlib.bd_9d63_arni_0
+Compiling module xil_defaultlib.bd_9d63_awni_0
+Compiling module xil_defaultlib.bd_9d63_bni_0
+Compiling module xil_defaultlib.bd_9d63_rni_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=4,...
+Compiling module xil_defaultlib.bd_9d63_wni_0
+Compiling module xil_defaultlib.i_nodes_imp_8FWCV4
+Compiling module xil_defaultlib.bd_9d63_rinsw_0
+Compiling module xil_defaultlib.bd_9d63_routsw_0
+Compiling module xil_defaultlib.bd_9d63_winsw_0
+Compiling module xil_defaultlib.bd_9d63_woutsw_0
+Compiling module xil_defaultlib.switchboards_imp_1OKFQXK
+Compiling module xil_defaultlib.bd_9d63
+Compiling module xil_defaultlib.aegis_soc_smartconnect_0_0
+Compiling module xlconstant_v1_1_10.xlconstant_v1_1_10_xlconstant(CO...
+Compiling module xil_defaultlib.aegis_soc_zero12_0
+Compiling module xil_defaultlib.aegis_soc
+Compiling module xil_defaultlib.aegis_soc_wrapper
+Compiling module xil_defaultlib.qspi_flash_model
+Compiling module xil_defaultlib.tb_bd_soc
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_bd_soc_behav
+execute_script: Time (s): cpu = 00:00:38 ; elapsed = 00:00:12 . Memory (MB): peak = 1939.930 ; gain = 0.000 ; free physical = 2637 ; free virtual = 13110
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ashwath/AAegis_soc_ip/aegis_soc/build/bd_soc/aegis_soc_bd.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_bd_soc_behav -key {Behavioral:sim_1:Functional:tb_bd_soc} -tclbatch {tb_bd_soc.tcl} -protoinst "protoinst_files/bd_9d63.protoinst" -protoinst "protoinst_files/aegis_soc.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_9d63.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m00_exit_pipeline/m00_exit/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m00_exit_pipeline/m00_exit/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m00_exit_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m00_exit_pipeline/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m00_sc2axi/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m01_exit_pipeline/m01_exit/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m01_exit_pipeline/m01_exit/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m01_exit_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m01_exit_pipeline/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m01_sc2axi/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m02_exit_pipeline/m02_exit/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m02_exit_pipeline/m02_exit/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m02_exit_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m02_exit_pipeline/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m02_sc2axi/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m03_exit_pipeline/m03_exit/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m03_exit_pipeline/m03_exit/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m03_exit_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m03_exit_pipeline/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m03_sc2axi/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m04_exit_pipeline/m04_exit/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m04_exit_pipeline/m04_exit/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m04_exit_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m04_exit_pipeline/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m04_sc2axi/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m05_exit_pipeline/m05_exit/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m05_exit_pipeline/m05_exit/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m05_exit_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m05_exit_pipeline/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//m05_sc2axi/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s00_axi2sc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s00_entry_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s00_entry_pipeline/s00_mmu/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s00_entry_pipeline/s00_mmu/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s00_entry_pipeline/s00_si_converter/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s00_entry_pipeline/s00_si_converter/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s00_entry_pipeline/s00_transaction_regulator/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s00_entry_pipeline/s00_transaction_regulator/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s00_entry_pipeline/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s01_axi2sc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s01_entry_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s01_entry_pipeline/s01_mmu/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s01_entry_pipeline/s01_mmu/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s01_entry_pipeline/s01_si_converter/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s01_entry_pipeline/s01_si_converter/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s01_entry_pipeline/s01_transaction_regulator/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s01_entry_pipeline/s01_transaction_regulator/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//s01_entry_pipeline/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//switchboards/i_nodes/i_aw_node/M_AXIS_ARB
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i/smartconnect_0/inst//switchboards/i_nodes/i_w_node/S_AXIS_ARB
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/aegis_soc.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//aegis_cpu_0/m_axil_d
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//aegis_cpu_0/m_axil_i
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//aegis_dma_0/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//aegis_dma_0/s_axil
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//aegis_dma_0/s_axis
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//aegis_gemm_0/s_axil
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//aegis_qspi_0/m_axis
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//aegis_qspi_0/s_axil
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//aegis_rom_0/s
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//aegis_sram_0/s
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//aegis_sysregs_0/s
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//aegis_tcm_0/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//smartconnect_0/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//smartconnect_0/M01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//smartconnect_0/M02_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//smartconnect_0/M03_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//smartconnect_0/M04_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//smartconnect_0/M05_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//smartconnect_0/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_bd_soc/dut/aegis_soc_i//smartconnect_0/S01_AXI
+Time resolution is 1 ps
+source tb_bd_soc.tcl
+## set curr_wave [current_wave_config]
+## if { [string length $curr_wave] == 0 } {
+##   if { [llength [get_objects]] > 0} {
+##     add_wave /
+##     set_property needs_save false [current_wave_config]
+##   } else {
+##      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+##   }
+## }
+## run all
+[SOC] reset released, Ibex boots from ROM
+AegisAI boot
+header ok
+tiles done
+PASS
+
+[SOC] firmware finished after 205711 cycles
+[SOC] 1536 result words compared against the software model: 0 mismatches
+
+[TB PASS] tb_bd_soc: block design - Ibex booted, DMA+SPECK+TCM+GEMM verified end to end
+
+$finish called at time : 4114210 ns : File "/home/ashwath/AAegis_soc_ip/aegis_soc/soc/tb/tb_bd_soc.sv" Line 148
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:51 . Memory (MB): peak = 1939.930 ; gain = 0.000 ; free physical = 2632 ; free virtual = 13148
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:52 . Memory (MB): peak = 1939.930 ; gain = 0.000 ; free physical = 2632 ; free virtual = 13148
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_bd_soc_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:46 ; elapsed = 00:01:10 . Memory (MB): peak = 1939.930 ; gain = 0.000 ; free physical = 2632 ; free virtual = 13148
+# puts "SIM_BD FINISHED"
+SIM_BD FINISHED
+# close_project
+INFO: xsimkernel Simulation Memory Usage: 314488 KB (Peak: 353992 KB), Simulation CPU Usage: 51560 ms
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  9 17:27:37 2026...

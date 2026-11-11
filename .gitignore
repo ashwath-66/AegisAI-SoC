@@ -1,0 +1,21 @@
+# build / tool output
+build/
+obj_*/
+.Xil/
+*.jou
+*.dcp
+*.vcd
+*.wdb
+hs_err_pid*.log
+*.backup.*
+xsim.dir/
+webtalk*
+# generated IP packaging output (recreated by flow/flatten_ip.py + flow/package_all.sh)
+ip/*/release/
+ip/*/synth/
+# logs (the .rpt reports are kept)
+reports/*.log
+__pycache__/
+*.pyc
+.vscode/
+.DS_Store
